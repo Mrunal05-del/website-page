@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Car Showcase</h1>
+        <nav>
+            <a href="#cars">Cars</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="cars" class="car-section">
+        <h2>Our Featured Cars</h2>
+        <div class="car-container">
+            <div class="car-card" onclick="showCarDetails('Car A')">
+                <img src="https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=320" alt="Car A">
+                <h3>Car A</h3>
+                <p>Price: $25,000</p>
+            </div>
+            <div class="car-card" onclick="showCarDetails('Car B')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoWcVqK8e_jAPt7mgQ9hMPANlQeFZUAeoJpQ&shttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoWcVqK8e_jAPt7mgQ9hMPANlQeFZUAeoJpQ&s" alt="Car B">
+                <h3>Car B</h3>
+                <p>Price: $30,000</p>
+            </div>
+            <div class="car-card" onclick="showCarDetails('Car C')">
+                <img src="https://www.ford.com/is/image/content/dam/vdm_ford/live/en_us/ford/nameplate/mustang/2025/collections/dm/24_FRD_MST_60983_2.tif?croppathe=1_3x2&wid=320" alt="Car C">
+                <h3>Car C</h3>
+                <p>Price: $40,000</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We provide the best selection of luxury and sports cars.</p>
+            <P>Key Features of a Car Showroom:</P>
+<p>Vehicle Displays: Showrooms feature a selection of cars (often from the same brand or manufacturer) arranged in a way that allows customers to see them up close. These vehicles may include the latest models, popular variants, or special edition cars.</p>
+
+<p>Sales Area: This is the space where customers can discuss their needs, budget, and preferences with sales representatives. It's often equipped with desks, computers, and tools to help potential buyers with pricing, financing options, and model specifications.</p>
+
+<p>Test Drive Opportunities: Many car showrooms provide customers with the chance to take a vehicle for a test drive. This is usually a key part of the buying process, allowing the buyer to assess the car’s performance and comfort.</p>
+
+<p>Customer Support: Showrooms often have dedicated areas for after-sales support, including discussions on maintenance packages, warranties, and car servicing options.</p>
+
+<p>Financing and Insurance Services: Many showrooms also have financing experts who can help customers arrange loans, leasing, or insurance for their new car. These services may be offered in collaboration with banks, financial institutions, or the car manufacturer itself.</p>
+
+<p>Promotions and Discounts: Some showrooms feature special promotions, discounts, or seasonal offers that encourage customers to make a purchase. This could include trade-in programs, cashback offers, or low-interest financing.</p>
+
+
+<p>Interactive Displays: In modern showrooms, interactive displays, augmented reality (AR) setups, or digital screens may be used to showcase the car's features, configurations, and options.</p>
+
+
+<p>Brand Representation: Showrooms are typically designed to represent the brand’s image and ethos. Luxury brands may have upscale, sleek showrooms, while mass-market brands may focus on simplicity and functionality.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            Enter your name:<input type="text"> <br><br>
+            Phone number:<input type="number" required="" placeholder="+91"><br><br>
+            Password:<input type="password"> <br><br>
+            Email: <input type="mail"> <br><br>
+            Address: <textarea></textarea><br><br>
+            Date: <input type="&lt;&quot;date&quot;"> <br><br>
+            Gender:<br>
+            Male:<input type="radio" name="g"><br>
+            Female:<input type="radio" name="g"><br>
+    </section>
+
+   <!-- Modal for Car Details -->
+   <div id="car-details" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Car Details</h5>
+                <button type="button" class="btn-close" onclick="closeCarDetails()"></button>
+            </div>
+            <div class="modal-body">
+                <p id="car-info"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+<!-- Footer -->
+<footer class="mt-5 bg-light py-3">
+    <div class="container text-center">
+        <p>&copy; 2024 CAR SHOWCASE. All rights reserved.</p>
+        <p><a href="contact.html">Contact Us</a> | <a href="#">Privacy Policy</a></p>
+    </div>
+</footer>
+
+</body>
+</html>
